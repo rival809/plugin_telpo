@@ -1,0 +1,3 @@
+rootProject.name = 'telpo_plugin'
+include ':telpo_plugin'
+//include ':libBioMini'
