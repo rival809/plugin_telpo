@@ -2,10 +2,10 @@ group = "com.example.test_plugin"
 version = "1.0-SNAPSHOT"
 
 // Dynamically locate the Flutter SDK path
-def flutterRoot = System.getenv("FLUTTER_ROOT")
+def flutterRoot = System.getenv("FLUTTER_SDK_PATH")
 
 if (flutterRoot == null || !file(flutterRoot).exists()) {
-    throw new GradleException("Flutter SDK not found. Please set the FLUTTER_ROOT environment variable.")
+    throw new GradleException("Flutter SDK not found. Please set the FLUTTER_SDK_PATH environment variable.")
 }
 
 buildscript {
