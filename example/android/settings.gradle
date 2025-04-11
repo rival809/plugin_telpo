@@ -1,20 +1,2 @@
-pluginManagement {
-    def flutterSdkPath = System.getenv("FLUTTER_SDK_PATH")
-    assert flutterSdkPath != null : "FLUTTER_SDK_PATH environment variable is not set. Please set it to the Flutter SDK path."
-
-    includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
-
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
-
-plugins {
-    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
-    id "com.android.application" version "8.1.0" apply false
-    id "org.jetbrains.kotlin.android" version "1.8.22" apply false
-}
-
-include ":app"
+rootProject.name = "telpo_plugin"
+include ":telpo_plugin"
